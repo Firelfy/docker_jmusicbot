@@ -16,7 +16,7 @@ RUN apt-get install -y openjdk-8-jre
 #RUN wget -P/bot https://github.com/jagrosh/MusicBot/releases/download/0.2.7/JMusicBot-0.2.7-All.jar
 
 ADD    ./start.sh /start.sh
-#ADD	   ./config.txt config.txt
+ADD	   ./config.txt config.txt
 RUN    chmod +x start.sh
 
 WORKDIR /bot
